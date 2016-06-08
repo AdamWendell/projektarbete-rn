@@ -1,0 +1,1 @@
+export const selectList = (listTitle = 'Wine') => ({type: 'NEW_SELECTED_LIST', listTitle: listTitle})
