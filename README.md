@@ -16,4 +16,4 @@ Projecktet använder
 "redux-persist": "^3.2.2"
 
 
-Appen är utvecklad med https://docs.google.com/a/websmith.se/document/d/1PhnY6JsyAtOGSpe_YoJ4zz-bKXz_slLSFJPu4JtfJY8/edit?usp=sharing som bas. 
+Appen är utvecklad med https://docs.google.com/document/d/1PhnY6JsyAtOGSpe_YoJ4zz-bKXz_slLSFJPu4JtfJY8/edit?usp=sharing som bas. 
