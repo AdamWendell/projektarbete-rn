@@ -11,30 +11,29 @@ class Info extends React.Component {
     const {data, language} = this.props
     console.log(data, language)
     return (
-      <View style={{backgroundColor: 'rgb(46, 76, 102)', flex: 1}}>
+      <View style={{backgroundColor: 'rgb(46, 76, 102)',}}>
         <ScrollView
           ref={(scrollView) => { _scrollView = scrollView; }}
           automaticallyAdjustContentInsets={false}
           onScroll={() => { console.log('onScroll!'); }}
-          scrollEventThrottle={200}
           contentContainerStyle={[styles.base, {marginBottom: pixelFixer(24) }]}>
           <View style={styles.container}>
-            <Image style={{width: pixelFixer(75), height: pixelFixer(45),}} source={require('../img/icon.png')} resizeMode='cover' />
+            <Image  source={require('../img/icon.png')} resizeMode='cover' />
             <Text style={[styles.text, styles.iconText, styles.iconTextHeader]}>LANDVETTER</Text>
             <Text style={[styles.text, styles.iconText ]}>AIRPORT HOTEL</Text>
           </View>
           <View style={[styles.container, ]}>
             <Text style={[styles.text, styles.welcome, {marginBottom: pixelFixer(5), marginTop: pixelFixer(18)}]}>{data.title[language]}</Text>
             <Text style={[styles.text, ]}>{data.description[language]}</Text>
-            
+
           </View>
         </ScrollView>
-        </View>  
+        </View>
 
       )
   }
 }
- 
+
 
 const styles = StyleSheet.create({
   base: {
@@ -61,10 +60,9 @@ const styles = StyleSheet.create({
     fontFamily: 'Courier-Bold'
   },
   iconTextHeader: {
-    fontSize:14 * PixelRatio.get(),
   },
   welcome: {
-    fontSize: 17 * PixelRatio.get(),
+    
     fontWeight: '200'
   }
 

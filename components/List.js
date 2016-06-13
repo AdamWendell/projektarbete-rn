@@ -8,13 +8,13 @@ class List extends React.Component {
 	constructor (props) {
 		super(props)
 		var ds = new ListView.DataSource({
-		    rowHasChanged: (r1, r2) => r1 !== r2
+		    rowHasChanged: (r1, r2) => true
 	    });
 
 	    this.state = {
   			dataSource: ds.cloneWithRows(this.props.items)
-	    }; 
-	} 
+	    };
+	}
 
   componentWillReceiveProps (nextProps) {
     this.setState({dataSource: this.state.dataSource.cloneWithRows(nextProps.items)})

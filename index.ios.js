@@ -19,9 +19,9 @@ class test extends Component {
 
   render() {
     return (
-      
+
         <App />
- 
+
     );
   }
 }

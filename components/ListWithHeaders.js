@@ -22,9 +22,9 @@ class ListWithHeaders extends React.Component {
     super(props)
      var ds = new ListView.DataSource({
       sectionHeaderHasChanged: (r1, r2) => r1 !== r2,
-      rowHasChanged: (r1, r2) => r1 !== r2
+      rowHasChanged: (r1, r2) => true
     });
-    
+
     this.state = {
       dataSource: ds.cloneWithRowsAndSections(formatData(this.props.items, this.props.language)),
       language: this.props.language

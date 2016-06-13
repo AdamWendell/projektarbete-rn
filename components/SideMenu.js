@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text} from 'react-native'
+import {Text, View} from 'react-native'
 import Drawer from 'react-native-drawer'
 import TabBar from './TabBar'
 import MenuRow from './MenuRow'
@@ -7,6 +7,9 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import {openDrawer, closeDrawer} from '../actions/drawerActions'
 import {dataAction} from '../actions/dataAction'
+
+
+import Content from './Content'
 
 class SideMenu extends React.Component {
   // componentDidMount () {
@@ -35,10 +38,9 @@ class SideMenu extends React.Component {
         openDrawerOffset={0.8}
         styles={{main: {paddingLeft: 0}, drawer: { shadowColor: '#000000', shadowOpacity: 0.8, shadowRadius: 6},}}
         negotiatePan={true}
-        captureGestures={false}
-      >
+        captureGestures={false}>
         <TabBar />
-      </Drawer>    
+      </Drawer>
     )
   }
 }
