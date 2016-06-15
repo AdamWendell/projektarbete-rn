@@ -1,8 +1,8 @@
 import React from 'react'
-import {AsyncStorage, StatusBar, View} from 'react-native'
+import {AsyncStorage} from 'react-native'
 import SideMenu from './SideMenu'
-import {Provider, connect} from 'react-redux'
-import {createStore, applyMiddleware, compose, bindActionCreators} from 'redux'
+import {Provider} from 'react-redux'
+import {createStore, compose} from 'redux'
 import {persistStore, autoRehydrate} from 'redux-persist'
 import reducers from '../reducers'
 
@@ -13,7 +13,7 @@ persistStore(store, {storage: AsyncStorage}).purgeAll()
 
 
 class App extends React.Component {
-	
+
 	render () {
 		return (
 			<Provider store={store}>

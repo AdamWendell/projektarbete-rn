@@ -8,7 +8,7 @@ class List extends React.Component {
 	constructor (props) {
 		super(props)
 		var ds = new ListView.DataSource({
-		    rowHasChanged: (r1, r2) => true
+		    rowHasChanged: (r1, r2) => true // Hitta bättre sätt att få rerender på texten när man byter språk
 	    });
 
 	    this.state = {

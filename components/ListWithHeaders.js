@@ -22,7 +22,7 @@ class ListWithHeaders extends React.Component {
     super(props)
      var ds = new ListView.DataSource({
       sectionHeaderHasChanged: (r1, r2) => r1 !== r2,
-      rowHasChanged: (r1, r2) => true
+      rowHasChanged: (r1, r2) => true // Hitta bättre sätt att få rerender på texten när man byter språk
     });
 
     this.state = {

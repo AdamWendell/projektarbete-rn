@@ -12,6 +12,7 @@ import {dataAction} from '../actions/dataAction'
 import Content from './Content'
 
 class SideMenu extends React.Component {
+  // På grund av server problem fick detta bli hårdkodat som initial state
   // componentDidMount () {
   //   (async () => {
 
